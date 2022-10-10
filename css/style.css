@@ -1,3 +1,4 @@
+/* Default */
 *{
     padding: 0;
     margin: 0;
@@ -5,103 +6,76 @@
 }
 
 html, body{
-    height: max-content;
-    background-color: rgb(82, 82, 82);
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
+    font-family: sans-serif;
 }
 
 #containerCenter{
     border: 4px solid black;
-    max-width: 95vw;
+    min-width: 418px;
+    width: 99vw;
+    height: auto;
 }
 
 p{
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(1em,1em + 1vw, 1.25em);
+    margin: auto 20px;
 }
 
-/* SECTIONS */
-
-section{
-    float: left;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-bottom: 50px;
-    margin-right: 50px;
-}
-
-#perfil{
-    max-width: 230px;
-}
-
-#habilidades{
-    max-width: 260px;
-}
-
-#informacoesPessoais{max-width: 400px;}
-
-#contato{max-width: 440px;}
-
-#education{max-width: 1300px;}
-
-#experienciaProfissional{max-width: 1500px;}
-
-#conquistas{max-width: 600px;}
-
-#hobbies{max-width: 700px;}
-
-#aboutMe{max-width: 1600px;}
-
-@media screen and (min-width: 769px){}
-
-@media screen and (max-width: 768px){
-    section{
-        float: left;
-        min-width: 450px;
-        width: 98%;
-        margin-left: 1%;
-        margin-bottom: 50px;
-        margin-right: 1%;
-    };
-}
-
-/* Circle */
-
-.circle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-i{
-    font-size: 30px;
-}
-
-/* Perfil */
-
-#perfil{}
-
-#perfil #foto{
-    background-image: url(../imagem.png);
-    background-position: center;
-    background-size: 300px;
-    border-radius: 50%;
-    border: 3px solid black;
-    width: 200px;
-    height: 200px;
-    background-position: center;
-}
-
-#perfil p{
-    font-size: 30px;
+span{
+    font-size: 21px;
     font-weight: 600;
-    font-style: italic;
 }
 
-/* Containers H1 */
+aside,main{
+    float: left;
+}
 
-.h1Container {
+@media only screen and (min-width:768px) {/*pc*/
+    aside{
+        width: 475px;
+    }
+    main{
+        width: calc(100% - 475px);
+        min-width: 650px;
+        max-width: 1500px;
+    }
+}
+
+@media only screen and (min-width:410px)and (max-width:1157px) {/*pc*/
+    aside,main{
+        min-width: 100%;
+    }
+    #contato, #skills{
+        float: left;
+    }
+}
+
+@media only screen and (max-width:769px) {/*mobile*/
+    aside,main{
+        width: 100%;
+        min-width: 412;
+    }
+    #conquistas,#hobbies{
+        display: block;
+        width: 100%;
+    }
+}
+
+div{
+    margin: 10px 5px;
+}
+/* title-box */
+
+#title-box{
+
+}
+
+.title-box {
     display: flex;
     margin-left: 5px;
     margin-top: 5px;
@@ -109,99 +83,104 @@ i{
     align-items: center;
 }
 
-.h1Container .circle{
-    background-color: rgb(0, 0, 0, 0.2);
+.title-box .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0583b3;;
     border-radius: 50%;
     border: 1px solid black;
     width: 60px;
     height: 60px;
 }
-
-.h1Container h1{
+.title-box .circle i{
     font-size: 35px;
+    color: #ffffff;
+}
+
+.title-box h2{
+    font-size: clamp(1em,1em + 1vw);
     margin-left: 5px;
 }
 
-/* Habilidades*/
-
-#habilidades{
-}
-
-#habilidades div{
-    display: flex;
-    margin-left: px;
-    margin-top: 5px;
-}
-
-#habilidades li{
-    text-align: right;
-    list-style: none;
-    line-height: 22.5px;
-    margin-bottom: 6px;
-    font-size: 20px;
-}
-
-#stars{
-    margin-left: 7px;
-    list-style: none;
-    width: 180px;
-}
-
-#stars li{
-    width: 100px;
-    height:22px;
-    background-image: url(../star0.png);
-    background-repeat: repeat-x;
-    background-size: 20px;
-}
-
-/* Informacoes Pessoais */
-
-#informacoesPessoais{
-
-}
-
-#informacoesPessoais p{
-    font-size: x-large;
-}
-
-/* Informações de contato */
-
-/* Educacao */
-
-section .education{
-    width: 600px;
-    height: 600px;
-}
-
-#education span{
-    font-weight: bold;
-}
-
-/* Hobbies */
-
-#hobbies{
+#perfil{
+    width: 200px;
     height: 200px;
-    padding: 20px;
 }
 
-.hobbie{
-    margin-left: 1%;
+#perfil #foto{
+    background-image: url(../imagem.png);
+    background-position: center;
+    background-size: 220px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 3px solid black;
+    width: 150px;
+    height: 150px;
+    background-position: center;
+}
+
+#perfil p{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+#conquistas{
+    display: inline-block;
+    width: calc(100% - 450px);
+    min-width: 400px;
+}
+
+#hobbies .box{
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .hobbie i{
     display: flex;
     justify-content: center;
+    font-size: 30px;
+    text-align: right;
+    color: #0583b3;
 }
 
-
-#hobbies #containerHobbies{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#hobbies{
+    display: inline-block;
+    width: 30%;
+    min-width: 400px;
 }
 
-#containerHobbies .hobbie{
-    margin-right: 10px;
+#skills ul{
+    list-style: none;
 }
 
+#skills ul li p{
+    display: inline-block;
+    font-weight: bold;
+}
+
+#skills ul li .valor{
+    margin-top: 7px;
+    -webkit-appearance: none;
+    width: 200px;
+    height: 8px;
+    background-color:  #ffffff;
+    border: 1px solid #0583b3;
+    border-radius: 20px;
+    float:right;
+    margin-left: -15px;
+    size: 1000px;
+}
+#skills ul li .valor::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #0583b3;
+    border-radius: 50%;
+}
+
+#about-me p{
+    margin-bottom: 20px;
+}

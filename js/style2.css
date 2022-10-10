@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: max-content;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+#containerCenter{
+    border: 4px solid black;
+    max-width: 95vw;
+}
+
+p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* SECTIONS */
+
+section{
+    float: left;
+}
+
+@media screen and(min-width=530px){
+    #habilidades{
+        margin-bottom: 30px;
+    }
+}
+#habilidades{
+    margin-left: 10px;
+    margin-bottom: 30px;
+    float: left;
+}
+#informacoesPessoais, #contato, #hobbies,#hobbies{
+    float: left;
+}
+
+#education, #experienciaProfissional, #conquistas{
+    float: right;
+}
+
+#perfil{max-width: 230px;}
+#habilidades{max-width: 260px;}
+#informacoesPessoais{max-width: 400px;}
+#contato{max-width: 440px;}
+#education{max-width: 1300px;}
+#experienciaProfissional{max-width: 1500px;}
+#conquistas{max-width: 600px;}
+#hobbies{max-width: 700px;}
+#aboutMe{max-width: 1600px;}
+
+#education, #experienciaProfissional, #conquistas, #aboutMe{
+    padding: 3px 10px;
+}
+
+@media screen and (min-width: 769px){
+    #education, #experienciaProfissional, #conquistas, #aboutMe{
+        padding: 3px 30px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    section{
+        margin-top: 20px;
+    }
+}
+
+/* Circle */
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+/* Perfil */
+
+#perfil #foto{
+    background-image: url(../imagem.png);
+    background-position: center;
+    background-size: 300px;
+    border-radius: 50%;
+    border: 3px solid black;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+}
+
+#perfil p{
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Containers H1 */
+
+.h1Container {
+    display: flex;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.h1Container .circle{
+    background-color: #0583b3;;
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 60px;
+    height: 60px;
+}
+
+.h1Container h1{
+    font-size: 35px;
+    margin-left: 5px;
+}
+
+/* Habilidades*/
+
+#habilidades div{
+    display: flex;
+    margin-left: px;
+    margin-top: 5px;
+}
+
+#habilidades li{
+    text-align: right;
+    list-style: none;
+    line-height: 22.5px;
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+
+#stars{
+    margin-left: 7px;
+    list-style: none;
+    width: 180px;
+}
+
+#stars li{
+    width: 100px;
+    height:22px;
+    background-image: url(../star0.png);
+    background-repeat: repeat-x;
+    background-size: 20px;
+}
+
+/* Informacoes Pessoais */
+
+#informacoesPessoais p{
+    font-size: x-large;
+}
+
+/* Informações de contato */
+
+#contato p{
+    margin-left: 15px;
+}
+
+/* Educacao */
+
+section .education{
+    width: 600px;
+    height: 600px;
+}
+
+#education span{
+    font-weight: bold;
+}
+
+/* Hobbies */
+
+#hobbies{
+    height: 200px;
+    padding: 20px;
+}
+
+.hobbie{
+    margin-left: 1%;
+}
+
+.hobbie i{
+    display: flex;
+    color: #0583b3;
+    justify-content: center;
+}
+
+#hobbies #containerHobbies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#containerHobbies .hobbie{
+    margin-right: 10px;
+}   

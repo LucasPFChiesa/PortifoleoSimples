@@ -1,102 +1,106 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <link>
-<title>Título</title>
+<title>Site</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta charset="utf-8" />
-
 <link href="../css/style.css" rel="stylesheet" type="text/css">
-
 <link href="../fontawesome-free-6.2.0/css/all.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <div id="containerCenter">
+        <aside>
 
-        <article>
-            <section id="perfil">
+            <div id="perfil">
                 <div id="foto"></div>
                 <p>LucasPFChiesa</p>
-            </section>
+            </div>
 
-            <section id="habilidades">
-                <div class="h1Container">
+            <div id="personal-info">
+                <div class="title-box">
                     <div class="circle">
-                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fas fa-user-large"></i>
                     </div>
-                    <h1>Habilidades</h1>
+                    <h2>Informações Pessoais</h2>
                 </div>
-                <div>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>PHP</li>
-                        <li>JAVASCRIPT</li>
-                    </ul>
-                    <ul id="stars">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-            </section>
-
-            <section id="informacoesPessoais">
-
-                <div class="h1Container">
-                    <div class="circle">
-                        <i class="fa-sharp fa-solid fa-circle-info"></i>
-                    </div>
-                    <h1>Informações Pessoais</h1>
-                </div>
-
                 <p>Nome: Lucas Pierre Fiorentim Chiesa</p>
                 <p>Data Nasc: 23/03/2000
                 <p>Nacionalidade: Americano</p>
-            </section>
+            </div>
 
-            <section id="contato">
-
-                <div class="h1Container">
+            <div id="contato">
+                <div class="title-box">
                     <div class="circle">
-                        <i class="fa-sharp fa-solid fa-address-book"></i>
+                        <i class="fas fa-book"></i>
                     </div>
-                    <h1>Informações de Contato</h1>
+                    <h2>Informações de Contato</h2>
                 </div>
-
                 <p>Informações de Contato</p>
                 <p>Email: Exemplo@gmail.com</p>
                 <p>Telefore: +55 (51) 9 3325999</p>
-            </section>
+            </div>
 
-
-            <section id="education">
-
-                <div class="h1Container">
+            <div id="skills">
+                <div class="title-box">
                     <div class="circle">
-                        <i class="fa-sharp fa-solid fa-graduation-cap"></i>
+                        <i class="fas fa-star"></i>
                     </div>
-                    <h1>Educação</h1>
+                    <h2>Habilidades</h2>
                 </div>
-                <p><span>Yale University / graphic Design</span>It is a long established fact that a reader will be
+                <div>
+                    <ul>
+                        <li>
+                            <p>HTML</p><input type="range" class="valor" value="30" disabled>
+                        </li>
+                        <li>
+                            <p>CSS</p><input type="range" class="valor" value="40" disabled>
+                        </li>
+                        <li>
+                            <p>PHP</p><input type="range" class="valor" value="10" disabled>
+                        </li>
+                        <li>
+                            <p>JAVASCRIPT</p><input type="range" class="valor" value="10" disabled>
+                        </li>
+                        <li>
+                            <p>PHOTOSHOP</p><input type="range" class="valor" value="3" disabled>
+                        </li>
+                        <li>
+                            <p>ILUSTRATOR</p><input type="range" class="valor" value="1" disabled>
+                        </li>
+                        <li>
+                            <p>DESIGNER</p><input type="range" class="valor" value="5" disabled>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </aside>
+
+        <main>
+            <div id="education">
+                <div class="title-box">
+                    <div class="circle">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h2>Educação</h2>
+                </div>
+                <p><span>Yale University / graphic Design</span> It is a long established fact that a reader will be
                     distracted by the readable content of a page when looking at its layout. The point of using Lorem
                     Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content
                     here, content here', making it look like readable English. Many desktop publishing packages and web
                     page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will
                     uncover many web sites still in their infancy. Various versions have evolved over the years,
                     sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-            </section>
+            </div>
 
-            <section id="experienciaProfissional">
-
-                <div class="h1Container">
+            <div id="experiencia-profissional">
+                <div class="title-box">
                     <div class="circle">
-                        <i class="fa-solid fa-briefcase"></i>
+                        <i class="fas fa-briefcase"></i>
                     </div>
-                    <h1>Experiência Profissional</h1>
+                    <h2>Experiência Profissional</h2>
                 </div>
-
                 <p><span>Dell / Graphic Designer/<span> 2010 - 2012<p>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have
                                 suffered alteration in some form, by injected humour, or randomised words which don't
@@ -115,58 +119,51 @@
                                 making this the first true generator on the Internet. It uses a dictionary of over 200
                                 Latin words, combined with a handful of model sentence structures, to generate Lorem
                                 Ipsum which looks reasonable.</p>
-            </section>
+            </div>
 
-            <section id="conquistas">
-
-                <div class="h1Container">
+            <div id="hobbies">
+                <div class="title-box">
                     <div class="circle">
-                        <i class="fa-sharp fa-solid fa-medal"></i>
+                        <i class="fas fa-football"></i>
                     </div>
-                    <h1>Conquistas</h1>
+                    <h2>Hobbies</h2>
                 </div>
-
-                <p>Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
-                    making this the first true generator on the Internet. It uses a dictionary of over 200
-                    Latin words, combined with a handful of model sentence structures, to generate Lorem
-                    Ipsum which looks reasonable.</p>
-
-            </section>
-
-            <section id="hobbies">
-
-                <div class="h1Container">
-                    <div class="circle">
-                        <i class="fa-solid fa-ghost"></i>
-                    </div>
-                    <h1>Hobbies</h1>
-                </div>
-                <div id="containerHobbies">
+                <div class="box">
                     <div class="hobbie">
-                        <i class="fa-solid fa-book-open"></i>
+                        <i class="fas fa-book-open"></i>
                         <p>Read</p>
                     </div>
 
                     <div class="hobbie">
-                        <i class="fa-brands fa-playstation"></i>
+                        <i class="fas fa-gamepad"></i>
                         <p>Games</p>
                     </div>
 
                     <div class="hobbie">
-                        <i class="fa-brands fa-codepen"></i>
+                        <i class="fas fa-code"></i>
                         <p>Programming</p>
                     </div>
                 </div>
+            </div>
 
-            </section>
-
-            <section id="aboutMe">
-
-                <div class="h1Container">
+            <div id="conquistas">
+                <div class="title-box">
                     <div class="circle">
-                        <i class="fa-solid fa-square-plus"></i>
+                        <i class="fas fa-medal"></i>
                     </div>
-                    <h1>Mais Sobre Mim</h1>
+                    <h2>Conquistas</h2>
+                </div>
+                <p>Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the
+                    first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a
+                    handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+            </div>
+
+            <div id="about-me">
+                <div class="title-box">
+                    <div class="circle">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <h2>Mais Sobre Mim</h2>
                 </div>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in cursus sapien. Sed sed lacus id
@@ -222,9 +219,11 @@
                     tortor enim sed lorem. Duis a facilisis ex. Aliquam convallis blandit congue. Phasellus non nisl
                     lacinia, fringilla erat id, porta nisi. Integer malesuada velit ac tincidunt pellentesque. Nam eget
                     cursus erat.</p>
-            </section>
 
-        </article>
+            </div>
+
+        </main>
+
     </div>
 </body>
 
